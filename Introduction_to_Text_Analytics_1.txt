@@ -1,0 +1,32 @@
+<Text Analytics: Definition>
+
+Text Mining : ... (중략) ... extracting interesting and non-trivial information and knowledge from unstructured text. 
+... (중략) ... information retrieval, data mining, machine learning, statistics and computational linguistics.
+
+결국은 Text Mining이란 데이터를 분석해서 의미있는 지식이나 지혜를 뽑아내는 게 목적(Extract Meaningful information and Knowledge)입니다. 
+다만 그 데이터는 Unstructured Text Data이고, 이걸 바탕으로 다양한 방법론(Using Various Analytical Methods)들을 배우게 될 것입니다.
+
+=====
+
+<Text Analytics: Applications>
+
+
+Information Abstraction/Summarization/Visualization
+- Central Bank speech analysis: Similarities between the central banks in the world
+- Unusual customer response identification and visualization
+    1. 데이터 전처리 및 벡터화
+    2. 특이 소비자 의견 탐지
+    3. 키워드 및 관계도 분석
+
+Document Clustering
+- Cluster documents and extract representative keywords for each cluster
+
+Topic Extraction
+- Analyze documents and extract latent topics in the corpus
+- 30 Topics discovered by LDA
+- Relations between topics
+
+Document Categorization/Classification
+- Spam mail filtering
+- Sport player evaluation 
+- Sentiment Analysis
