@@ -1,0 +1,29 @@
+<Text Analytics: Applications>
+
+Recommendation
+- Analyze texts in drum cafe, blogs, and SNS contents
+- Named entity recognition/extraction (NEE/NER) technique in natural language processing is used
+- For 60,000 keywords
+- Dining code: restaurant recommendation service
+    1. Anaylze restaurant review from top 3 blog services (naver, daum, tistory)
+    2. Assign higher weights to opinion leader's posts
+    3. Filter advertising blog posts by analyzing the comments on a post
+
+Improve forecasting accuracy combined with structured data
+- Forecasting the box office scores based on the polarity of SNS posts
+- Early warning model for financial firms
+
+Natural Language Understanding: Question Answering
+
+Doing Conversation like Human Beings: Chatbot (Dialogue system)
+
+=====
+
+<Text Analytics: Challenges>
+
+Challenges
+- High number of possible "dimensions" (word, phrases, etc.)
+- Complex and subtle relationship between concepts in texts
+- Ambiguity and context sensitivity
+    - automobile = car = vehicle = Hyundai 
+
