@@ -1,0 +1,44 @@
+<Text Analytics: Text Structures>
+
+Structure of text data
+- Data Mining / Knowledge Discorvery
+    - Structured Data
+    - Multimedia
+    - Free Text
+    - Hypertext
+
+How Unstructured is "Unstructured"?
+    - Weakly structured
+        - Few structural cues to text based layout or makeups: research papers, legal memoranda, news stories, ets.
+    - Semi-structured
+        - Extensive format elements, metadata, field labels: E-mail, HTML/XML web pages, pdf files, etc.
+Why is Text Mining Hard?
+    - Language itself is ambiguous
+        - Contexts is needed to clarify
+        - Same word with different meanings, different words with same meaning
+        - Misspellings, abbreviations, etc. 
+
+=====
+
+<Text Analytics: Types of Text Analytics>
+
+Seven Types of Text Mining
+    - Document Classification
+        - Grouping and categorizing snippets, paragraphs, or document using data mining classification methods,
+          based on models trained on labeled examples
+    - Document Clustering
+        - Grouping and categorizing terms, snippets, paragraphs or documents using data mining clustering methods
+    - Concept Extraction
+        - Grouping or words and phrases into semantically similar groups
+    - Search and Information Retrieval(IR)
+        - Storage and retrieval of text documents, including search engines and keyword search
+    - Information Extraction(IE)
+        - Identification and extraction of relevant facts and relationships from unstructured texts,
+          The process of making structured data from unstructured and semi-structured texts
+    - Web Mining
+        - Data and text mining on the internet with a specific focus on the scale and
+          Interconnectedness of the web
+    - Natural Language Processing(NLP)
+        - Low-level language processing and understanding tasks(e.g, tagging part of speech)
+        - often used synonymously with computational linguistics
+
