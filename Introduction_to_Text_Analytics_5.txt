@@ -1,0 +1,35 @@
+<Text Processing Level 2: Token>
+
+Extracting meaningful (worth being analyzed) tokens (word, number, space, etc.) from a text is not an easy task.
+    - Is <John's sick> one token or two?
+        - if one ➔ problems in parsing (where is the verb?)
+        - if two ➔ what do we do with John's house?
+    - What to do with hyphens?
+        - database vs. data-base vs. data base
+    - Some languages do not use whitespace (e.g., Chinese)
+
+Consistent tokenization is important for all later processing steps.
+
+Power distribution in word frequencies
+    - It is not true that more frequently appeared words (tokens) are more important for text mining task.
+
+Stop-words
+    - Words that do not carry any information
+        - Mainly functional role
+        - Usually remove them to help the machine learning algorithms to perform better
+    - Natural language dependent
+        - English: a, about, above, across, after, again, against, all, also, etc.
+        - 한국어:...습니다, ...로서(써), ...를 등
+
+Stemming
+    - Different forms of the same word are usually problematic for text data analysis,
+      because they have different spelling and similar meaning
+        - Learns, learned, learning, ...
+    - Stemming is a process of transforming a word into its stem (normalized form)
+        - In English: Porter2 stemmer (http://snowball.tartarus.org/algorithms/english/stemmer.html)
+        - In Korean, 꼬꼬마 형태소 분석기 (http://kkma.snu.ac.kr/documents/)
+
+Lemmatization
+    - Although stemming just finds any base form, which does not even need to be a word in the language,
+      but lemmatization finds the actual root of a word.
+ 
