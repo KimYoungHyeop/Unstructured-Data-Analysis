@@ -1,0 +1,31 @@
+<TM Process 2: Transformation>
+
+Document representation
+    - Bag-of-words: simplifying representation method for documents where a text is
+      represented in a vector of an unordered collection of words
+        - S1: Jon likes to watch movies. Mary likes too.
+        - S2: John also likes to watch football game.
+
+Word Weighting
+    - Each word is represented as a separate variable with a numeric weight
+    - Term frequency and inverse document frequency (TF-IDF)
+        - tf(w): term frequency (number of word occurrences in a document)
+            ➔ The word is more important if it appears several times in a target document
+        - df(w): number of documents containing the word (number of documents containing the word) <마크다운이 불가해 식은 생략합니다!>
+            ➔ The word is more important if it appears in less documents
+
+One-hot-vector representation
+    - The most simple & intuitive representation
+    - Can make a vector representation, but similarities between words cannot be preserved.
+
+Word vectors: distributed: distributed representation
+    - A parameterized function mapping words in some language to a certain dimensional vectors
+
+Interesting feature of word embedding
+    - Semantic relationship between words can be preserved
+
+Pre-trained Word Models
+    - Word2vec, fastText, GloVe, ...
+
+Pre-trained Language Models
+    - ELMo, GPT 계열, BERT 계열, ...
