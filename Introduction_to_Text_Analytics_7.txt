@@ -1,0 +1,25 @@
+<TM Process 3: Dimensionality Reduction>
+
+Feature subset selection
+- Select only the best features for further analysis (즉, 특정 목적에 걸맞은 최적의 변수 집합을 '선택'하는 것! 주어진 변수를 가공하거나 변형시키지 않고, 
+    - The most frequent				   중요 여부를 판단해 토큰들을 선택적으로 사용한다는 의미)
+    - The most informative relative to the all class values, ...
+
+- Scoring methods for individual feature (for supervised learning tasks)
+    - Information gain: <마크다운이 불가해 수식은 생략합니다!>
+    - Cross-entropy: <마크다운이 불가해 수식은 생략합니다!>
+    - Mutual information: <마크다운이 불가해 수식은 생략합니다!>
+    - Weight of evidence: <마크다운이 불가해 수식은 생략합니다!>
+    - Odds ratio: <마크다운이 불가해 수식은 생략합니다!>
+    - Frequency: <마크다운이 불가해 수식은 생략합니다!>
+
+=====
+
+Feature subset extraction
+- Feature extraction: construct a set of variables that preserve the information of the
+  originl data by combining them in a linear/non-linear form
+- Latent Semantic Analysis(LSA) that is based on singular value decomposition is
+  commonly used
+    - Rectangular matrix A(m x n) can be decomposed as <마크다운이 불가해 수식은 생략합니다!>
+    - All singular vectors of the matrices U and V are orthogonal <마크다운이 불가해 수식은 생략합니다!>
+    - Eigenvalues of the Matrix 시그마 is positive and sorted in a descending order 
