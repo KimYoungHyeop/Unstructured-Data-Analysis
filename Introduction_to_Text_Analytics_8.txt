@@ -1,0 +1,35 @@
+- SVD in Text Mining (Latent Semantic Analysis/Indexing)
+    - Step 1) Using SVD, a term-document matrix D is reduced to $D_k$
+        ➔ <마크다운이 불가해 수식은 생략합니다!>
+    - Step 2) Multiply the transpose of the matrix $U_k$
+        ➔ <마크다운이 불가해 수식은 생략합니다!>
+    - Apply data mining algorithms to the matrix obtained in the Step 2)
+
+  설명 : SVD혹은 LSA가 Text Mining에서 사용되는 관점을 설명하자면 m개의 Terms, n개의 Documents를 가지고 있는 corpus가 존재한다고 가정했을 때,
+  이 corpus는 U라는 matrix와 sigma라는 diagonal matrix와 V라는 matrix 이 세 가지로 decomposed가 될 수 있습니다. 그런데 sigma의 diagonal 값들은 
+  각각의 U와 V에 대응하는 이 column들이 얼만큼 중요한가를 표현하는 value라고 볼 수 있기 때문에 전체 모든 r차원을 사용하지 않고, r보다 적은 k개의 차원만을 사용해서도
+  데이터를 reconstruction 할 수 있어서 k차원으로 표현된 데이터를 가지고 적절한 연산을 통해 단어나 문서를 축약하는 데에 사용 되는 방법론입니다.
+
+- LSA example
+    - Data: 41,717 abstracts of the research projects that were funded by National Science Foundation (NSF) between 1990 and 2003
+    - Top 10 positive and negative keywords for each SVD
+
+- Topic Modeling as a Feature Extractor
+    - Latent Dirichlet Allocation (LDA)
+        - 단어(w)는 특정 토픽들 z로부터 생성됨
+        - 해당 문서가 어떤 토픽 비율(topic proportion, θ)을 가질 것인지는 파라미터가 알파인 Dirichlet distribution에 의해 결정됨
+        - w만 실제로 관찰할 수 있는 값이고 θ,z,Φ는 숨겨진 값임
+        - 문서 생성 프로세스는 먼저 다항분포 θ로부터 토픽이 나타날 확률 θ를 추출하고 이를 바탕으로 단어가 나타날 확률인 w를 산출함
+
+- Topic Modeling as a Feature Extractor
+    - Two outputs of topic modeling
+        - Per-document topic proportion
+        - Per-topic Word distribution 
+
+  설명 : Per-document topic proportion는 각자의 문서에 대해서 하나의 토픽들이 얼마의 비중을 차지하고 있는가라서 각 row의 합은 1이 됩니다.(토픽들의 합이어서)
+        Per-topic Word distributio는 각자의 토픽별로 단어가 얼마의 비중을 차지하고 있는가를 추정을 통해 산출할 수 있습니다. 역시 각 column의 합은 1이 됩니다.
+        Feature Extractor 관점에서는 토픽들의 비중을 k차원의 실수값으로 표현할 수 있는 Per-document topic proportion을 쓰겠다는 말입니다.
+
+- Document to vector (Doc2Vec)
+    - A natural extension of word2vec
+    - Use a distributed representation for each document
