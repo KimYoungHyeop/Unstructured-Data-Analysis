@@ -6,6 +6,7 @@
 
 ## Contents
 ---
+
 ### Topic 1: Introduction to Text Analytics
 
 ### Topic 2: Text Preprocessing
