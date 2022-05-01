@@ -1,6 +1,9 @@
 # Unstructured-Data-Analysis
 고려대학교 산업경영공학부 DSBA 연구실 강필성 교수님의 자료를 보고 공부한 레포지토리입니다.
 
+<img width="756" alt="스크린샷 2022-05-01 오후 5 07 50" src="https://user-images.githubusercontent.com/86637058/166137764-812c0896-b14f-4270-89cd-e6834a8dffd8.png">
+
+
 ## Contents
 ---
 ### Topic 1: Introduction to Text Analytics
