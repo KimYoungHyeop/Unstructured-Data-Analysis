@@ -1,0 +1,29 @@
+<TM Process 4: Learning & Evaluation>
+
+Similarity Between Documents
+- Document similarity
+    - Use the <cosine similarity> rather than Euclidean distance
+      Ex) D1 Word1 = 1 Word = 1 Word = 1
+          D2 Word1 = 3 Word = 3 Word = 3
+          D3 Word1 = 0 Word = 2 Word = 0 
+
+          설명: 이 세 문서 관점으로 봤을 때 D1과 D2는 단어들의 사용 빈도(비율)은 동일하지만 횟수는 다릅니다.
+               그렇다면 D1과 D2 사이의 유사성과 D1과 D3 사이의 유사성을 비교하자면, 유클리디안 거리에서는 둘 사이의 좌표계의
+               차이의 제곱을 해서 루트를 씌우기 때문에 D1과 D3이 더 가깝게 됩니다. 그러나 여기에서는 단어의 사용 용법은 단순히      
+               문서가 길고 짧음의 차이이지 단어의 사용 빈도나 또는 ditribution 관점에서는 D1과 D2가 더 가깝다고 표현해 주는 것이
+               코사인 유사도입니다.
+
+=====
+
+Learning Task 1: Classification
+- Document categorization (classification)
+    - Automatically classify a document into one of the pre-defined categories
+
+      설명: Learning task 관점에서 전통적이고 가장 많이 쓰였던 것이 Classification이고, 감성분석도 Classification의 
+           하나의 하위 부류라고 볼 수 있습니다. 긍정이냐 부정이냐만 분류하게 되면 Binary classification(이범주 분류)이 되겠고,
+           다양한 감정을 예측 혹은 분류를 해야 하는 상황이라면 Multiclass classification(다범주 분류)가 됩니다.
+           Labeled document라는 건 문서와 함께 (x, y)라는 정답이 주어져 있으면 이걸 통해서 y=f(x)가 되는 알고리즘들을 학습을
+           시키고요, 새롭게 제공된 Unlabeled documents를 적용을 했을 때 실제 해당하는 documents의 label 또는 category가
+           무엇인지 예측해 주는 것이 Classification task라고 볼 수 있습니다.
+            
+           
