@@ -1,0 +1,33 @@
+- Spam filtering
+  설명: 본문(Raw data)가 주어졌을 때 속성(Features)으로써 Bag of words로 표현된 Vector space model, knowledge를 통해 변환된 변수들,
+       Meta-data들을 모두 한꺼번에 만들어서 Naive Bayesian 기법을 활용해서 예측을 해보면 Words only, Words+Phrases, Words+Phrases+Domain-Specific
+       상황에서 Junk 메일과 Legitimate 메일이 잘 분류됨을 보여주는 내용이었습니다.
+
+  설명2: Naive Bayesian 알고리즘은 전통적으로 Bag of words 모델과 궁합이 잘 맞아서 뉴럴네트워크 모델이 나오기전까지는 많이 사용이 되었던 모델입니다.
+
+- Sentiment Analysis 
+
+=====
+
+Learning Task 2: Clustering
+- Document Clustering & Visualization Ex)Keywords association, Journal/Topic Clustering, ...
+    - Have a top level view of the topics in the corpora
+    - See relationships between topics
+    - Understand better what's going on
+
+=====
+
+Learning Task 3: Information Extraction/Retrieval
+- Information extraction/retrieval
+    - Find useful information from text databases
+    - Examples: Question Answering (가장 유명한 벤치마크 데이터셋으로 SQuAD Dataset을 꼽을 수 있음)
+
+- Topic Modeling
+    - A suite of algorithms that aim to discover and annotate large archives of documents with thematic information
+    - Statical methods that analyze the words of the original texts to discover
+        - the themes that run through them
+        - how themes are connected to each other
+        - how the change over time
+
+- Latent Dirichlet Allocation (LDA)
+ 
